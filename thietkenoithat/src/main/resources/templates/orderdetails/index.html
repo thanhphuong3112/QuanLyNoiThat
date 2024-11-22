@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>OrderDetails</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>OrderDetails</h2>
+        <a href="/orderdetails/add" class="btn btn-success">Add OrderDetails</a>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>OrderDetailID</th>
+                    <th>OrderID</th>
+                    <th>ProductID</th>
+                    <th>Quantity</th>
+                    <th>UnitPrice</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="user : ${list}">
+                    <td th:text="${user.order_ID}"></td>
+                    <td th:text="${user.orderid}"></td>
+                    <td th:text="${user.producID}"></td>
+                    <td th:text="${user.quantity}"></td>
+                    <td th:text="${user.unitprice}"></td>
+                     <td><a class="btn btn-primary btn-sm">Sửa</a>
+                        <a class="btn btn-danger btn-sm" onclick="return confirm('Xóa rồi có hối hận không??')">Xóa</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

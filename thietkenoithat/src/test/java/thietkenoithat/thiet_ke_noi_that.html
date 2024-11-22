@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nội Thất Sang Trọng</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        nav {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            background-image: url('https://images.unsplash.com/photo-1505691938895-1758d7feb511?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920');
+            background-size: cover;
+            background-position: center;
+            height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+        .hero h2 {
+            font-size: 48px;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 40px;
+            background-color: #fff;
+        }
+        .product {
+            background-color: #fafafa;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .product h3 {
+            font-size: 22px;
+            margin: 15px 0;
+        }
+        .product p {
+            font-size: 16px;
+            color: #666;
+        }
+        .product:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nội Thất Sang Trọng</h1>
+        <p>Khám phá phong cách nội thất đẳng cấp</p>
+    </header>
+    <nav>
+        <a href="#home">Trang Chủ</a>
+        <a href="#about">Giới Thiệu</a>
+        <a href="#products">Sản Phẩm</a>
+        <a href="#contact">Liên Hệ</a>
+    </nav>
+    <div class="hero">
+        <h2>Không gian sống đỉnh cao</h2>
+    </div>
+    <section id="products" class="products">
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600" alt="Ghế Sofa Cao Cấp">
+            <h3>Ghế Sofa Cao Cấp</h3>
+            <p>Giá: 20.000.000 VND</p>
+        </div>
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1600566752627-8b2e6f206c94?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600" alt="Bàn Ăn Hiện Đại">
+            <h3>Bàn Ăn Hiện Đại</h3>
+            <p>Giá: 15.000.000 VND</p>
+        </div>
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1580645680273-1bcf450b1148?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600" alt="Tủ Quần Áo Sang Trọng">
+            <h3>Tủ Quần Áo Sang Trọng</h3>
+            <p>Giá: 25.000.000 VND</p>
+        </div>
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600" alt="Đèn Trang Trí Nghệ Thuật">
+            <h3>Đèn Trang Trí Nghệ Thuật</h3>
+            <p>Giá: 5.000.000 VND</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Nội Thất Sang Trọng. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
