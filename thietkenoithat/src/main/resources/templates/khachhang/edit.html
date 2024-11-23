@@ -1,0 +1,44 @@
+<form method="post">
+	<div>
+		<label for="classId">Class</label>
+		<div>
+			<select name="classId" id="classId">
+				<option th:each="o : ${classes}" th:value="${o.id}" th:text="${o.name}"></option>
+			</select>
+		</div>
+	</div>
+	<div>
+		<label for="code">Code</label>
+		<div>
+			<input type="text" name="code" id="code" th:value="${o.code}">
+		</div>
+	</div>
+	<div>
+		<label for="email">Email</label>
+		<div>
+			<input type="text" name="email" id="email" th:value="${o.email}">
+		</div>
+	</div>
+	<div>
+		<label for="firstName">First Name</label>
+		<div>
+			<input type="text" name="firstName" id="firstName" th:value="${o.firstName}">
+		</div>
+	</div>
+		<div>
+		<label for="lastName">Last Name</label>
+		<div>
+			<input type="text" name="lastName" id="lastName" th:value="${o.lastName}">
+		</div>
+	</div>
+		<div>
+		<label for="gender">Gender</label>
+		<div>
+			<input type="checkbox" value="true" name="gender" id="gender" th:value="${o.gender}">
+		</div>
+	</div>
+	<div>
+		<button>Save Change</button>
+	</div>
+	
+</form>
