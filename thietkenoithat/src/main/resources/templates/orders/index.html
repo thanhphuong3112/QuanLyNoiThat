@@ -12,20 +12,20 @@
         <table class="table table-bordered">
             <thead>
                 <tr>
-                    <th>Product ID</th>
-                    <th>Product Name</th>
-                    <th>Category</th>
-                    <th>Price</th>
-                    <th>Description</th>
+                    <th>Order ID</th>
+                    <th>Order Date</th>
+                    <th>Customer ID</th>
+                    <th>Total Amount</th>
+                    <th>Status</th>
                 </tr>
             </thead>
             <tbody>
                 <tr th:each="user : ${list}">
-                    <td th:text="${user.prID}"></td>
-                    <td th:text="${user.prName}"></td>
-                    <td th:text="${user.cate}"></td>
-                    <td th:text="${user.price}"></td>
-                    <td th:text="${user.des}"></td>
+                    <td th:text="${user.orid}"></td>
+                    <td th:text="${user.ordate}"></td>
+                    <td th:text="${user.cusid}"></td>
+                    <td th:text="${user.total}"></td>
+                    <td th:text="${user.status}"></td>
                     <td>
                         <a class="btn btn-primary btn-sm">Sửa</a>
                         <a class="btn btn-danger btn-sm" onclick="return confirm('Có chắc muốn xóa không ní ?')">Xóa</a>

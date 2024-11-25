@@ -5,31 +5,31 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
-@Entity (name = "Products")
+@Entity (name= "Products")
 public class Products {
     @GeneratedValue (strategy = GenerationType.IDENTITY)
     @Id
-    @Column (name = "ProductID")
-    private short prID;
-    @Column (name = "ProductName")
-    private String prName;
-    @Column (name ="Category")
+    @Column (name= "ProductID")
+    private short prid;
+    @Column(name = "ProductName")
+    private String prname;
+    @Column (name = "Category")
     private String cate;
-    @Column(name = "Price")
+    @Column (name = "Price")
     private float price;
     @Column (name = "Description")
     private String des;
-    public short getPrID() {
-        return prID;
+    public short getPrid() {
+        return prid;
     }
-    public void setPrID(short prID) {
-        this.prID = prID;
+    public void setPrid(short prid) {
+        this.prid = prid;
     }
-    public String getPrName() {
-        return prName;
+    public String getPrname() {
+        return prname;
     }
-    public void setPrName(String prName) {
-        this.prName = prName;
+    public void setPrname(String prname) {
+        this.prname = prname;
     }
     public String getCate() {
         return cate;
