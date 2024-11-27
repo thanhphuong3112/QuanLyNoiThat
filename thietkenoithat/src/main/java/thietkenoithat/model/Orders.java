@@ -7,14 +7,13 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
-@Entity (name= "Order")
+@Entity (name= "Orders")
 public class Orders {
-
 
     @GeneratedValue (strategy = GenerationType.IDENTITY)
     @Id
     @Column (name= "OrderID")
-    private short orid;
+    private short orderid;
     @Column (name =" OrderDate")
     private Date ordate;
     @Column (name="CustomerID")
@@ -23,11 +22,11 @@ public class Orders {
     private Float total;
     @Column(name="Status")
     private String status;
-    public short getOrid() {
-        return orid;
+    public short getOrderid() {
+        return orderid;
     }
-    public void setOrid(short orid) {
-        this.orid = orid;
+    public void setOrderid(short orderid) {
+        this.orderid = orderid;
     }
     public Date getOrdate() {
         return ordate;
@@ -53,7 +52,7 @@ public class Orders {
     public void setStatus(String status) {
         this.status = status;
     }
-    
+     
 }
 
 
