@@ -64,6 +64,11 @@ body {
   text-align: left;
   background-color: #fff; }
 
+  img {
+    width: 150%;
+    overflow: hidden;
+  }
+
 [tabindex="-1"]:focus {
   outline: 0 !important; }
 
